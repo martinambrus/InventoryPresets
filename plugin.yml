@@ -1,4 +1,4 @@
-name: InventoryPresets
+name: InventoryPresetsRecode
 main: me.azenet.InventoryPresets.InventoryPresets
 version: 1.0.1
 softdepend: [Vault]

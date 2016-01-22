@@ -110,6 +110,12 @@ public class InventoryPresets extends JavaPlugin implements Listener {
 			}
 		}, 20 * 300, 20 * 300);
 
+        try {
+			new Metrics(this);
+		} catch (IOException e) {
+			Bukkit.getLogger().warning("Failed to initialize Metrics.");
+		}
+
         this.log.info("[InventoryPresets] InventoryPresets v" + version + " is now enabled.");
     }
 
