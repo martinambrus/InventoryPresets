@@ -1,0 +1,31 @@
+name: InventoryPresets
+main: me.azenet.InventoryPresets.InventoryPresets
+version: 1.0.1
+softdepend: [Vault]
+authors: [azenet, ZathrusWriter]
+commands:
+   ipsave:
+      description: Saves your inventory as a preset.
+      permission: inventorypresets.save
+      usage: |
+           /ipsave <preset name>
+   iprecall:
+      description: Recall a saved preset.
+      permission: inventorypresets.recall
+      usage: |
+           /iprecall <preset name>
+   ipclear:
+      description: Clear your inventory.
+      permission: inventorypresets.clear
+      usage: |
+           /ipclear
+   iplist:
+      description: List presets you have saved before.
+      permission: inventorypresets.list
+      usave: |
+           /iplist
+   ipremove:
+      description: Remove a specific preset.
+      permission: inventorypresets.remove
+      usave: |
+           /ipremove <name of preset>    
